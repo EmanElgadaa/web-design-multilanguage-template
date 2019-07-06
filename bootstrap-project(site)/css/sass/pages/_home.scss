@@ -1,0 +1,182 @@
+//.carousel-control-next-icon
+li
+{
+	padding: 0;
+	margin: 0;
+}
+body
+{
+	font-size: 25px;
+}
+//============================================header
+header
+{
+	ul li
+	{
+		display: inline-block;
+	}
+	.slide
+	{
+		position: relative;
+		.carousel-inner
+		{
+			.slide-content
+			{
+				position: absolute;
+				top: 37%;
+    			z-index: 3;
+				width: 100%;
+				h1
+				{
+					@extend %bigfont;
+				}
+				p
+				{
+					@extend %meduimfont;
+					width: 39%;
+					margin: 0 auto !important;
+				}
+				button
+				{
+					border: 1px solid #ffffff;
+					background-color: unset;
+					@extend %meduimfont;
+					padding: .85% 3%;
+				}
+			}
+		}
+	}
+	.carousel-control-next-icon ,.carousel-control-prev-icon
+	{
+		border: 2px solid;
+		
+	}
+}
+/*=============section-two icon-para=============*/
+.icon-para-home
+{
+	background-color: $white-dark;
+	.common-icon-para
+	{
+		i
+		{
+			
+		}
+		i:hover
+		{
+			color: $blue-color;
+		}
+		h4
+		{
+			@extend %meduimfontblue;
+		}
+		p
+		{
+			@extend %meduimfont;
+			color: $dark-gray;
+		}
+	}
+}
+/*=================section-project recennt-project=============*/
+.recent-project
+{
+	h4
+	{
+		@extend %meduimfontblue;
+		&::after
+		{
+			content: "";
+			display: block;
+			background-color: $blue-color;
+			width: 60px;
+			height: 3px;
+			margin-top: 1%;
+		}
+	}
+}
+/*==================================number-home======================*/
+.number
+{
+	background-color: $blue-color;
+	h5
+	{
+		@extend %meduimfontsecond;
+		font-size: 2rem;
+	}
+	p
+	{
+		@extend %meduimfontsecond;
+		font-size: 1.2rem;
+	}
+}
+/*-======================from-blog======================*/
+.from-blog
+{
+	.media
+	{	
+		background-color: $white-dark;
+		.item{ width: 100% !important;}
+		img
+		{
+			width: auto;
+		}
+		.media-body
+		{
+			
+			h5
+			{
+				@extend %meduimfont;
+				color: $dark-gray;
+			}
+			p
+			{
+				@extend %meduimfont;
+				color: $dark-gray;
+			}
+			a 
+			{
+				    padding-left: 65%;
+				font-size: 1.2rem;
+			}
+		}
+	
+	}
+}
+.owl-carousel .owl-nav button.owl-next ,
+.owl-carousel .owl-nav button.owl-prev
+
+{
+	justify-content: center;
+    width: 40px;
+	background-color: $blue-color;
+	border-radius: 0;
+}
+.owl-carousel .owl-nav button.owl-next span ,
+.owl-carousel .owl-nav button.owl-prev
+{
+	color: #ffffff;
+}
+
+.owl-carousel .owl-nav.disabled
+	{
+		display: flex;
+		justify-content: flex-end;
+	}
+@media only screen and (max-width: 992px)
+	{
+		header .slide .carousel-inner .slide-content h1
+		{
+			font-size: 1.5rem
+		}
+		header .slide .carousel-inner .slide-content p
+		{
+			font-size: .7rem;
+			line-height: .9;
+		}
+		// body
+		// {
+		// 	font-size: 10px !important;
+		// }
+	
+	}
+

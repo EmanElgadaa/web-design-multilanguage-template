@@ -1,0 +1,139 @@
+footer
+{
+	background-color: $black-light;
+	.sub-footer
+	{
+		background-color:$blue-color;
+		text-align: center;
+		p
+		{
+			@extend %meduimfontsecond;
+			display: inline-block;
+		
+			
+		}
+		button
+		{
+			border: 1px solid $white-color;
+			background-color: unset;
+			@extend %meduimfont;
+			text-transform: $textupper;
+			padding: 2.7% 7%;
+		}
+	}
+	.footer-content
+	{
+		ul 
+		{
+			padding-left: 0;
+			li
+			{
+				list-style: none;
+				i{
+					color: $blue-color;
+					padding-right: 2%;
+				}
+			}
+		}
+		.footer-about
+		{
+			h4
+			{
+				@extend %meduimfontblue;
+			}
+			p
+			 {
+					@extend %meduimfont;
+				 	line-height: 1.8em;
+			 }
+		}
+		.footer-releated
+		{
+			h4
+			{
+				@extend %meduimfontblue;
+			}
+			ul 
+			 {
+				 li
+				 {
+					@extend %meduimfont;
+					 line-height: 1.8em;
+				 }	
+			 }
+		}
+		.footer-news
+		{
+			h4
+			{
+				@extend %meduimfontblue;
+			}
+			ul 
+			 {
+				 li
+				 {
+					@extend %meduimfont; 
+					line-height: 1.8em;
+				 }	
+			 }
+		}
+		.footer-get
+		{
+			h4
+			{
+				@extend %meduimfontblue;
+			}
+			p
+			 {
+					@extend %meduimfont;
+				 	line-height: 1.8em;
+			 }
+			ul 
+			 {
+				 li
+				 {
+					@extend %meduimfont; 
+				 }	
+			 }
+		}
+	}
+	.end-footer
+	{
+		background-color: $black-dark;
+		p
+		{
+			margin-bottom: 0;
+			span
+			{
+				@extend %meduimfontblue;
+				font-size: .67rem;
+			}
+		}
+		
+	}	
+}
+/*==============================footer===*/
+@media only screen and (max-width: 900px) 
+{
+	footer
+	{
+		.footer-content
+		{
+			.footer-about
+			{
+				p
+				{
+					width: 250px;
+				}
+			}
+			.footer-get
+			{
+				p
+				{
+					width:250px;
+					margin-bottom: 0 !important;
+				}
+			}
+		}
+	}
+}

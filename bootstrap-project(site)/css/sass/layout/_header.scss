@@ -1,0 +1,70 @@
+header
+{
+	.sub-nav
+	{
+		position: fixed;
+		z-index: 5;
+		width: 100%;
+		height: 2.3rem;
+		background-color: $whit-light;
+		font-size: .8rem;
+		box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.09);
+		.btn-translate
+		{
+			text-align: end;
+			vertical-align: top;
+		}
+		.col-lg-3 ,.col-sm-4 ,.col-lg-2 ,.col-sm-6
+		{
+			width: 40% !important;
+		}
+	}
+	nav
+	{
+		font-size: .87rem;
+		.navbar-collapse
+		{
+			.navbar-nav
+			{
+					
+					.nav-link:hover
+					{
+						color: $blue-color;
+					}
+			}
+		}
+	}
+
+}
+.address
+{
+	 background-color: $blue-color;
+     .address-content
+	{
+		height: 57px;
+		align-items: center;
+		h6
+		{
+			@extend %meduimfontsecond;
+		}
+		p
+		{
+			@extend %meduimfont;
+		}
+	}
+}
+@media only screen and (max-width: 992px) 
+{
+	
+	header
+	{
+		.sub-nav
+		{
+			.nav-contact
+			{
+				display: none;
+			}
+			
+		}
+	}
+}

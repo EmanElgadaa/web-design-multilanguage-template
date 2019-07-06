@@ -1,0 +1,24 @@
+@mixin fonttype($font,$fontsize,$fontcolor:$white-color,$texttransform:lowercase,$font-weight:400)
+{
+	font-family: $font;
+	font-size: $fontsize;
+	color: $fontcolor;
+	text-transform: $texttransform;
+	font-weight: $font-weight;
+}
+%bigfont
+{
+	@include fonttype($fontfamily,2.6rem,$white-color,$textupper,700);
+}
+%meduimfont
+{
+	@include fonttype($fontfamily,.86rem,$white-color,$texttransform,300);
+}
+%meduimfontblue
+{
+	@include fonttype($fontfamily,1.2rem,$blue-color,$textupper,500);
+}
+%meduimfontsecond
+{
+	@include fonttype($fontfamily,1rem,$white-color,$textupper,400);
+}
